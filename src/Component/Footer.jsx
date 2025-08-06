@@ -12,8 +12,10 @@ function Footer() {
           <a href="/Blog" className="hover:underline">Blog</a>
           <a href="/Careers" className="hover:underline">Careers</a>
         </div>
+        
       </div>
     </footer>
+    
   );
 }
 
