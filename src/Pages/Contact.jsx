@@ -53,6 +53,8 @@ const Contact = () => {
         </form>
        
       </section>
+      <h1 className="text-5xl font-extrabold text-blue-500 font-serif   text-center mt-10">Location</h1>
+     <hr className="mx-auto mt-1 border-0 h-1  bg-blue-500 w-40" />
        <div className="w-full mt-10">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2611.4599179425036!2d80.9958310151135!3d26.958303521224146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sintegral%20university!5e0!3m2!1sen!2sin!4v1754911588741!5m2!1sen!2sin"

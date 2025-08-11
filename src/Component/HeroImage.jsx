@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const HeroImage = ({ title, imageUrl }) => {
   return (
     <div
-      className="relative w-full h-[60vh] bg-cover bg-center flex items-center justify-center"
+      className="relative w-full h-[75vh] bg-cover bg-center  flex items-center justify-center"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
       <motion.div

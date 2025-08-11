@@ -33,7 +33,7 @@ const Navbar = () => {
       ? "bg-gray-900 shadow-md"
       : "bg-transparent"
     : "bg-transparent";
-
+   
     
   return (
     <nav className={`fixed top-0    left-0 w-full z-50 transition-all duration-300 ${bgClass}`}>
@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="md:hidden px-4 pb-4 bg-white shadow">
+        <div className="md:hidden px-4 pb-4 bg-white shadow text-center">
           <Link to="/" className="block py-2" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/about" className="block py-2" onClick={() => setIsOpen(false)}>About</Link>
           <Link to="/services" className="block py-2" onClick={() => setIsOpen(false)}>Services</Link>
