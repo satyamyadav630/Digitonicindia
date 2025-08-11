@@ -30,10 +30,11 @@ const Navbar = () => {
   const isHome = location.pathname === "/";
   const bgClass = isHome
     ? scrolled
-      ? "bg-black shadow-md"
+      ? "bg-gray-900 shadow-md"
       : "bg-transparent"
     : "bg-transparent";
 
+    
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${bgClass}`}>
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
@@ -46,7 +47,7 @@ const Navbar = () => {
           <Link to="/AboutUs" className="text-white font-semibold">About</Link>
           <Link to="/Services" className="text-white font-semibold">Services</Link>
           <Link to="/Contact" className="text-white font-semibold">Contact</Link>
-    
+    <Link to="/Blog" className="text-white font-semibold">Blogs</Link>
         </div>
 
         <div className="md:hidden">

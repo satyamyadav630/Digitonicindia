@@ -1,11 +1,11 @@
 import React from "react";
 import HeroImage from "../Component/HeroImage";
-import logo4 from "../assets/logo4.jpg"; // image path
+import logo5 from "../assets/logo5.jpg"; // image path
 
 const AboutUs = () => {
   return (
     <>
-      <HeroImage title="Contact Us" imageUrl={logo4} />
+      <HeroImage title="About Us" imageUrl={logo5} />
       <section className="py-16 px-6 max-w-4xl mx-auto">
         <form className="space-y-4">
           {/* Your form here */}
