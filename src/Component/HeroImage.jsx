@@ -14,7 +14,7 @@ const HeroImage = ({ title, imageUrl }) => {
         transition={{ duration: 0.8 }}
         className="bg-black bg-opacity-40 p-6 rounded text-white text-center"
       >
-        <h1 className="text-4xl font-bold">{title}</h1>
+        <p className="text-8xl font-extrabold text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]">{title}</p>
       </motion.div>
     </div>
   );

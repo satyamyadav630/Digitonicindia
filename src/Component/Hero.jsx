@@ -6,9 +6,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Import images from assets
-import logo from "../assets/logo.jpg";
-import Logo2 from "../assets/logo2.jpg";
-import logo3 from "../assets/logo3.jpg";
+import logo from "../assets/logo1.webp";
+import Logo2 from "../assets/logo2.webp";
+import logo3 from "../assets/logo3.webp";
 
 const Hero = () => {
   const slides = [
@@ -36,8 +36,8 @@ const Hero = () => {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 5000,
+    speed:1000,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,

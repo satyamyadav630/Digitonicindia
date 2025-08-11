@@ -36,18 +36,19 @@ const Navbar = () => {
 
     
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${bgClass}`}>
-      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <Link to="/" className="flex items-center">
-          <img src={logo} alt="Logo" className="h-10 w-auto" />
+    <nav className={`fixed top-0    left-0 w-full z-50 transition-all duration-300 ${bgClass}`}>
+      <div className="max-w-7xl  h-20 mx-auto px-4 py-3 flex justify-between items-center">
+        <Link to="/" className="flex  items-center over">
+          <img src={logo} alt="Logo" className="h-44 w-52 p-1 " />
         </Link>
 
-        <div className="hidden md:flex space-x-6">
-          <Link to="/" className="text-white font-semibold">Home</Link>
-          <Link to="/AboutUs" className="text-white font-semibold">About</Link>
-          <Link to="/Services" className="text-white font-semibold">Services</Link>
-          <Link to="/Contact" className="text-white font-semibold">Contact</Link>
-    <Link to="/Blog" className="text-white font-semibold">Blogs</Link>
+        <div className="hidden md:flex space-x-9">
+          <Link to="/" className="text-white text-lg">Home</Link>
+          <Link to="/AboutUs" className="text-white text-lg">About</Link>
+          <Link to="/Services" className="text-white text-lg">Services</Link>
+          <Link to="/Contact" className="text-white text-lg">Contact</Link>
+          <Link to="/Blog" className="text-white text-lg">Blogs</Link>
+          <Link to="/Internship" className="text-white text-lg">Internship</Link>
         </div>
 
         <div className="md:hidden">
@@ -63,6 +64,8 @@ const Navbar = () => {
           <Link to="/about" className="block py-2" onClick={() => setIsOpen(false)}>About</Link>
           <Link to="/services" className="block py-2" onClick={() => setIsOpen(false)}>Services</Link>
           <Link to="/contact" className="block py-2" onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link to="/blog" className="block py-2" onClick={() => setIsOpen(false)}>Blogs</Link>
+          <Link to="/Internship" className="block py-2" onClick={() => setIsOpen(false)}>Internship</Link>
         </div>
       )}
     </nav>

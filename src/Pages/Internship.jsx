@@ -1,9 +1,8 @@
-import React from "react";
-import HeroImage from "../Component/HeroImage";
-import logo6 from "../assets/logo6.webp"; // image path
+import React from 'react'
+import logo6 from'../assets/logo6.webp'
 
-const Services = () => {
-  return (
+const Internship = () => {
+ return (
     <>
       <HeroImage title="Services" imageUrl={logo6} />
        <section className="py-16 px-6 max-w-4xl mx-auto">
@@ -15,4 +14,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Internship;
