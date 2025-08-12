@@ -67,37 +67,19 @@ const Serving = [
       "Bring To The Table Win-win Survival Strategies To Ensure Proactive Domination.",
     icon: Code2,
   },
-  {
-    id: "10",
-    title: "Data Analytics",
-    description:
-      "Bring To The Table Win-win Survival Strategies To Ensure Proactive Domination.",
-    icon: PieChart,
-  },
-  {
-    id: "11",
-    title: "Maintenance Support",
-    description:
-      "Bring To The Table Win-win Survival Strategies To Ensure Proactive Domination.",
-    icon: Wrench,
-  },
-  {
-    id: "12",
-    title: "AR & VR Development",
-    description:
-      "Bring To The Table Win-win Survival Strategies To Ensure Proactive Domination.",
-    icon: Gamepad2,
-  },
+  
+
 ];
 
 export default function ServiceCardRow( ) {
   return (
     <>
-     <h1 className="text-5xl font-extrabold text-blue-500 font-serif   text-center mt-10">Our Services</h1>
-     <hr className="mx-auto mt-1 border-0 h-1  bg-blue-500 w-64" />
-    <div className="bg-white py-8 px-6 mt-2">
      
-      <div className="max-w-7xl mx-auto grid md:grid-cols-3 00 gap-8">
+    <div className="bg-blue-950 py-8 px-6 mt-">
+      <h1 className="text-5xl font-extrabold text-blue-500 font-serif  text-center ">Our Services</h1>
+     <hr className="mx-auto mt-1 border-0 h-1  bg-blue-500 w-64 mb-11" />
+     
+      <div className="max-w-7xl mx-auto grid md:grid-cols-3 00 gap-11">
         {Serving.map((service) => {
           const Icon = service.icon;
           return (
