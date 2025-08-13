@@ -13,13 +13,15 @@ import Blog from "./Pages/Blog";
 import AboutUs from './Pages/AboutUs';
 import Footer from './Component/Footer';
 import Contact from './Pages/Contact';
-// ✅ Home icon hata diya
+// import { AnimatePresence, motion } from "framer-motion";
+
 
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
 <div>
+  
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/AboutUs" element={<AboutUs />} />
@@ -29,11 +31,13 @@ function App() {
         {/* <Route path="/Careers" element={<Careers />} /> */}
         <Route path="/Internship" element={<Internship />} />
       </Routes>
+     
 </div>
-      {/* <Hero /> */}
+
+     
       <Footer/>
     </div>
   );
 }
 
-export default App;
+export default App;   

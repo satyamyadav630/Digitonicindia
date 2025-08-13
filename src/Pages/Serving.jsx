@@ -85,7 +85,7 @@ export default function ServiceCardRow( ) {
           return (
             <div
               key={service.id}
-              className="relative bg-white p-6 rounded-2xl shadow-xl transition-all duration-500 ease-in-out hover:-translate-y-2 hover:scale-105 group hover:bg-blue-500"
+              className="relative bg-white p-6 rounded-2xl shadow-xl transition-all duration-500 ease-in-out hover:-translate-y-2 hover:scale-105 group hover:bg-blue-500 cursor-pointer"
             >
               {/* Number Badge */}
               <div className="absolute -top-6 right-6 bg-white rounded-full shadow-lg p-4 w-14 h-14 flex items-center justify-center font-bold text-gray-700 transition-all duration-500 group-hover:bg-green-500 group-hover:text-white">

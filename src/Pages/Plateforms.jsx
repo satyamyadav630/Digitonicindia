@@ -7,6 +7,7 @@ import {
   SiKubernetes, SiMongodb, SiMysql, SiPostgresql, SiDjango,
   SiTensorflow, SiPytorch
 } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const platforms = [
   { name: "AWS", icon: <FaAws size={50} color="#FF9900" /> },
@@ -36,17 +37,24 @@ export default function Platforms() {
         Platforms We Work On
       </h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 max-w-6xl mx-auto place-items-center">
-        {platforms.map((p, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center justify-center cursor-pointer w-28 h-28 sm:w-32 sm:h-32 rounded-full border-4 border-blue-500 bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 hover:bg-green-600  hover:shadow-2xl"
-          >
-            {p.icon}
-            <span className="mt-2 text-sm font-medium text-gray-700 text-center">{p.name}</span>
-          </div>
-        ))}
-      </div>
+
+
+<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 max-w-6xl mx-auto place-items-center">
+  {platforms.map((p, index) => (
+    <motion.div
+      key={index}
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      viewport={{ once: false, amount: 0.3 }} // once:false = baar-baar jab aaye tab chale
+      transition={{ duration: 0.15, delay: index * 0.05 }}
+      className="flex flex-col items-center justify-center cursor-pointer w-28 h-28 sm:w-32 sm:h-32 rounded-full border-4 border-blue-500 bg-white shadow-lg transform transition-transform duration-300 hover:scale-110 hover:bg-green-600 hover:shadow-2xl"
+    >
+      {p.icon}
+      <span className="mt-2 text-sm font-medium text-gray-700 text-center">{p.name}</span>
+    </motion.div>
+  ))}
+</div>
+
     </div>
   );
 }
