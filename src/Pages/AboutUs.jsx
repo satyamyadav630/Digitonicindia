@@ -1,6 +1,7 @@
 import React from "react";
 import HeroImage from "../Component/HeroImage";
 import logo8 from "../assets/logo8.webp"; // image path
+// import TeamSection from "./TeamSection";
 
 const timelineData = [
   { year: "2018", event: "Company Founded with 3 members" },
@@ -31,26 +32,27 @@ const teamMembers = [
 ];
 
 const technologies = [
-  {
-    name: "React",
-    logo: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
-  },
-  {
-    name: "Node.js",
-    logo: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
-  },
-  {
-    name: "Tailwind CSS",
-    logo: "https://unpkg.com/simple-icons@v9/icons/tailwindcss.svg" ,
-  },
-  {
-    name: "MongoDB",
-    logo: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
-  },
-  {
-    name: "Express",
-    logo: "https://cdn.worldvectorlogo.com/logos/express-109.svg",
-  },
+  { name: "React", logo: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+  { name: "Node.js", logo: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" },
+  { name: "Tailwind CSS", logo: "https://unpkg.com/simple-icons@v9/icons/tailwindcss.svg" },
+  { name: "MongoDB", logo: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" },
+  { name: "Express", logo: "https://cdn.worldvectorlogo.com/logos/express-109.svg" },
+  { name: "JavaScript", logo: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg" },
+  { name: "TypeScript", logo: "https://cdn.worldvectorlogo.com/logos/typescript.svg" },
+  { name: "CSS3", logo: "https://cdn.worldvectorlogo.com/logos/css-3.svg" },
+  { name: "Python", logo: "https://cdn.worldvectorlogo.com/logos/python-5.svg" },
+  { name: "Django", logo: "https://cdn.worldvectorlogo.com/logos/django.svg" },
+  { name: "Git", logo: "https://cdn.worldvectorlogo.com/logos/git-icon.svg" },
+  { name: "GitHub", logo: "https://cdn.worldvectorlogo.com/logos/github-icon.svg" },
+  { name: "Firebase", logo: "https://cdn.worldvectorlogo.com/logos/firebase-1.svg" },
+  { name: "AWS", logo: "https://cdn.worldvectorlogo.com/logos/amazon-web-services-2.svg" },
+  { name: "Docker", logo: "https://cdn.worldvectorlogo.com/logos/docker.svg" },
+  { name: "Redux", logo: "https://cdn.worldvectorlogo.com/logos/redux.svg" },
+  { name: "Bootstrap", logo: "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" },
+  { name: "Sass", logo: "https://cdn.worldvectorlogo.com/logos/sass-1.svg" },
+    { name: "Sass", logo: "https://cdn.worldvectorlogo.com/logos/sass-1.svg" },
+  { name: "C#", logo: "https://cdn.worldvectorlogo.com/logos/c--4.svg" },
+  { name: "Java", logo: "https://cdn.worldvectorlogo.com/logos/java-4.svg" }
 ];
 
 const AboutUs = () => {
@@ -79,7 +81,7 @@ const AboutUs = () => {
         </div>
 
         {/* Team Section */}
-        <div>
+         <div>
           <h2 className="text-4xl font-bold font-serif cursor-pointer text-indigo-500 mb-1 text-center">
             Meet Our Team
           </h2>
@@ -88,12 +90,12 @@ const AboutUs = () => {
             {teamMembers.map(({ name, role, img, funFact }, idx) => (
               <div
                 key={idx}
-                className="max-w-xs bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-indigo-500 transition-shadow"
+                className="max-w-xs bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-indigo-500  transition-shadow"
               >
                 <img
                   src={img}
                   alt={name}
-                  className="w-32 h-32 rounded-full object-cover mb-6 ring-4 ring-indigo-300"
+                  className="w-32 h-32 rounded-full object-cover mb-6 ring-4  ring-indigo-300"
                 />
                 <h3 className="text-2xl font-bold text-gray-900">{name}</h3>
                 <p className="text-indigo-600 font-semibold mb-3">{role}</p>
@@ -101,7 +103,8 @@ const AboutUs = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> 
+        
 
         {/* Technologies Section */}
         <div>
@@ -109,11 +112,11 @@ const AboutUs = () => {
             Our Technologies
           </h2>
               <hr className="mx-auto mt-1 border-0 h-1 mb-8 bg-blue-500 w-60" />
-          <div className="flex flex-wrap justify-center gap-16 max-w-5xl mx-auto items-center">
+          <div className="flex flex-wrap justify-center gap-16 max-w-5xl  mx-auto items-center">
             {technologies.map(({ name, logo }, idx) => (
               <div
                 key={idx}
-                className="flex flex-col items-center w-28 p-4 rounded-3xl hover:shadow-lg transition cursor-default bg-white"
+                className="flex flex-col items-center w-28 p-4 rounded-3xl hover:bg-pink-300 hover:shadow-lg transition cursor-pointer  bg-white"
               >
                 <img
                   src={logo}
