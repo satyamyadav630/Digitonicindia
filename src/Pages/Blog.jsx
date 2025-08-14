@@ -91,7 +91,7 @@ export default function Blog1() {
   return (
     <>
       {/* Hero Section */}
-      <HeroImage title="Latest Blogs & Insights" imageUrl={logo5} />
+      <HeroImage title=" Blogs " imageUrl={logo5} />
 
       {/* Blog Section */}
       <section className="py-16 px-6 max-w-7xl mx-auto">
