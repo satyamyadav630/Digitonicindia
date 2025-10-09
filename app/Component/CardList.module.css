@@ -1,0 +1,41 @@
+.accentTopLeft::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(90deg, #00d1ff, #2b6cff);
+  border-radius: 3px;
+  animation: slideRight 2s infinite alternate ease-in-out;
+}
+
+.accentBottomRight::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(90deg, #2b6cff, #00d1ff);
+  border-radius: 3px;
+  animation: slideLeft 2s infinite alternate ease-in-out;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}

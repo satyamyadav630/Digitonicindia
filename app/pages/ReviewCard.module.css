@@ -1,0 +1,43 @@
+.cardAccentTopLeft::before,
+.cardAccentBottomRight::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, #00d1ff, #2b6cff);
+  width: 90px;  /*height line ki*/
+  height: 5px;  /*weidth line ki*/ 
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.cardAccentTopLeft::after,
+.cardAccentBottomRight::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, #00d1ff, #2b6cff);
+  width: 5px;
+  height: 70px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+/* 🔹 top-left accent — now on border corner */
+.cardAccentTopLeft::before {
+  top: -2px;     /* slightly outside the card */
+  left: -2px;
+}
+.cardAccentTopLeft::after {
+  top: -2px;
+  left: -2px;
+}
+
+/* 🔹 bottom-right accent — now on border corner */
+.cardAccentBottomRight::before {
+  bottom: -2px;   /* slightly outside the border */
+  right: -2px;
+  transform: rotate(180deg);
+}
+.cardAccentBottomRight::after {
+  bottom: -2px;
+  right: -2px;
+  transform: rotate(180deg);
+}
