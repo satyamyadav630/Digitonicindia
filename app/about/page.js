@@ -48,12 +48,13 @@ const About = () => {
               🚀 Vision
             </h3>
             <p className="text-gray-600 mb-1 md:mt-5 text-base leading-relaxed text-justify">
-              To build future-ready digital solutions that solve real problems
-              and create lasting impact for businesses and communities
-              To build future-ready digital solutions that solve real problems
-              and create lasting impact for businesses and communitiesTo build future-ready digital solutions that solve real problems
-              and create lasting impact for businesses and communities thats why we refer  and communities thats why we refers
-              ..
+              Digitonic envisions a world where technology empowers every
+              individual and business to grow beyond limitations. Our vision is
+              to create a digital ecosystem that bridges innovation with
+              accessibility, offering sustainable, human-centered solutions. We
+              aim to become a leading force in building smarter, connected, and
+              future-ready communities. By continuously evolving with trends and
+              embracing creativity.
             </p>
             <Link
               href="/about/vision"
@@ -69,12 +70,13 @@ const About = () => {
               🎯 Mission
             </h3>
             <p className="text-gray-600 mb-1 md:mt-5 text-base leading-relaxed text-justify">
-              To build future-ready digital solutions that solve real problems
-              and create lasting impact for businesses and communities
-              To build future-ready digital solutions that solve real problems
-              and create lasting impact for businesses and communitiesTo build future-ready digital solutions that solve real problems
-              and create lasting impact for businesses and communities thats why we refer  and communities thats why we refers
-              ..
+              Our mission at Digitonic is to design and deliver transformative
+              digital solutions that enhance productivity, learning, and
+              business growth. We strive to empower clients with technology that
+              simplifies processes, inspires innovation, and drives measurable
+              success. Through hands-on project development, industrial
+              training, and internship programs, Digitonic bridges the gap
+              between education and industry
             </p>
             <Link
               href="/about/mission"
@@ -90,12 +92,13 @@ const About = () => {
               🌱 Values
             </h3>
             <p className="text-gray-600 mb-1 md:mt-5 text-base leading-relaxed text-justify">
-              To build future-ready digital solutions that solve real problems
-              and create lasting impact for businesses and communities
-              To build future-ready digital solutions that solve real problems
-              and create lasting impact for businesses and communitiesTo build future-ready digital solutions that solve real problems
-              and create lasting impact for businesses and communities thats why we refer  and communities thats why we refers
-              ..
+              At Digitonic, our values define who we are and how we work.
+              Innovation drives our creativity, helping us build meaningful
+              digital solutions. Integrity ensures transparency and trust in
+              every project we undertake. Teamwork fuels collaboration and
+              shared success, while continuous learning keeps us evolving with
+              technology. We value our clients, respect our people, and stay
+              committed to excellence.
             </p>
             <Link
               href="/about/value"
@@ -130,7 +133,11 @@ const About = () => {
                   We stand out because of our commitment to quality, innovation,
                   and customer satisfaction. Our solutions are designed to
                   empower businesses with cutting-edge technology and a
-                  human-first approach empower businesses with cutting-edge technology and aempower businesses with cutting-edge technology and aempower businesses with cutting-edge technology and aempower businesses with cutting-edge technology and a.
+                  human-first approach empower businesses with cutting-edge
+                  technology and aempower businesses with cutting-edge
+                  technology and aempower businesses with cutting-edge
+                  technology and aempower businesses with cutting-edge
+                  technology and a.
                 </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
                   <li>✔ Trusted by clients nationwide</li>

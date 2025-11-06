@@ -21,8 +21,8 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [pathname]);
 
-  const bgClass = scrolled ? "bg-white shadow-md" : "bg-transparent";
-  const textColorClass = scrolled ? "text-black " : "text-white";
+  const bgClass = scrolled ? " " : "bg-transparent";
+  const textColorClass = scrolled ? " " : "text-white";
 
   const navLinkClass = (href) =>
     pathname === href
@@ -82,13 +82,13 @@ export default function Navbar() {
         href="/services/devlopment"
         className="block px-4 py-2 text-gray-700 hover:bg-indigo-50"
       >
-        Development
+       Project Development
       </Link>
         <Link
         href="/services/job"
-        className="block px-4 py-2 text-gray-700 hover:bg-indigo-50"
+        className="block px-4 py-2  text-gray-700 hover:bg-indigo-50"
       >
-        Job
+        Industrial training
       </Link>
       <Link
         href="/services/internship"
